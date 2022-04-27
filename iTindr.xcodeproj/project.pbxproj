@@ -1,0 +1,609 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		46A47A5C281909CD001C0F09 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46A47A5B281909CD001C0F09 /* AppDelegate.swift */; };
+		46A47A5E281909CD001C0F09 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46A47A5D281909CD001C0F09 /* SceneDelegate.swift */; };
+		46A47A60281909CD001C0F09 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46A47A5F281909CD001C0F09 /* ViewController.swift */; };
+		46A47A63281909CD001C0F09 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46A47A61281909CD001C0F09 /* Main.storyboard */; };
+		46A47A65281909CE001C0F09 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 46A47A64281909CE001C0F09 /* Assets.xcassets */; };
+		46A47A68281909CE001C0F09 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46A47A66281909CE001C0F09 /* LaunchScreen.storyboard */; };
+		46A47A73281909CF001C0F09 /* iTindrTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46A47A72281909CF001C0F09 /* iTindrTests.swift */; };
+		46A47A7D281909CF001C0F09 /* iTindrUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46A47A7C281909CF001C0F09 /* iTindrUITests.swift */; };
+		46A47A7F281909CF001C0F09 /* iTindrUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46A47A7E281909CF001C0F09 /* iTindrUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		46A47A6F281909CF001C0F09 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 46A47A50281909CD001C0F09 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 46A47A57281909CD001C0F09;
+			remoteInfo = iTindr;
+		};
+		46A47A79281909CF001C0F09 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 46A47A50281909CD001C0F09 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 46A47A57281909CD001C0F09;
+			remoteInfo = iTindr;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		46A47A58281909CD001C0F09 /* iTindr.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iTindr.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		46A47A5B281909CD001C0F09 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		46A47A5D281909CD001C0F09 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		46A47A5F281909CD001C0F09 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		46A47A62281909CD001C0F09 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		46A47A64281909CE001C0F09 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		46A47A67281909CE001C0F09 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		46A47A69281909CE001C0F09 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		46A47A6E281909CF001C0F09 /* iTindrTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iTindrTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		46A47A72281909CF001C0F09 /* iTindrTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iTindrTests.swift; sourceTree = "<group>"; };
+		46A47A78281909CF001C0F09 /* iTindrUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iTindrUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		46A47A7C281909CF001C0F09 /* iTindrUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iTindrUITests.swift; sourceTree = "<group>"; };
+		46A47A7E281909CF001C0F09 /* iTindrUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iTindrUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		46A47A55281909CD001C0F09 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		46A47A6B281909CF001C0F09 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		46A47A75281909CF001C0F09 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		46A47A4F281909CD001C0F09 = {
+			isa = PBXGroup;
+			children = (
+				46A47A5A281909CD001C0F09 /* iTindr */,
+				46A47A71281909CF001C0F09 /* iTindrTests */,
+				46A47A7B281909CF001C0F09 /* iTindrUITests */,
+				46A47A59281909CD001C0F09 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		46A47A59281909CD001C0F09 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				46A47A58281909CD001C0F09 /* iTindr.app */,
+				46A47A6E281909CF001C0F09 /* iTindrTests.xctest */,
+				46A47A78281909CF001C0F09 /* iTindrUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		46A47A5A281909CD001C0F09 /* iTindr */ = {
+			isa = PBXGroup;
+			children = (
+				46A47A5B281909CD001C0F09 /* AppDelegate.swift */,
+				46A47A5D281909CD001C0F09 /* SceneDelegate.swift */,
+				46A47A5F281909CD001C0F09 /* ViewController.swift */,
+				46A47A61281909CD001C0F09 /* Main.storyboard */,
+				46A47A64281909CE001C0F09 /* Assets.xcassets */,
+				46A47A66281909CE001C0F09 /* LaunchScreen.storyboard */,
+				46A47A69281909CE001C0F09 /* Info.plist */,
+			);
+			path = iTindr;
+			sourceTree = "<group>";
+		};
+		46A47A71281909CF001C0F09 /* iTindrTests */ = {
+			isa = PBXGroup;
+			children = (
+				46A47A72281909CF001C0F09 /* iTindrTests.swift */,
+			);
+			path = iTindrTests;
+			sourceTree = "<group>";
+		};
+		46A47A7B281909CF001C0F09 /* iTindrUITests */ = {
+			isa = PBXGroup;
+			children = (
+				46A47A7C281909CF001C0F09 /* iTindrUITests.swift */,
+				46A47A7E281909CF001C0F09 /* iTindrUITestsLaunchTests.swift */,
+			);
+			path = iTindrUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		46A47A57281909CD001C0F09 /* iTindr */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 46A47A82281909CF001C0F09 /* Build configuration list for PBXNativeTarget "iTindr" */;
+			buildPhases = (
+				46A47A54281909CD001C0F09 /* Sources */,
+				46A47A55281909CD001C0F09 /* Frameworks */,
+				46A47A56281909CD001C0F09 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = iTindr;
+			productName = iTindr;
+			productReference = 46A47A58281909CD001C0F09 /* iTindr.app */;
+			productType = "com.apple.product-type.application";
+		};
+		46A47A6D281909CF001C0F09 /* iTindrTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 46A47A85281909CF001C0F09 /* Build configuration list for PBXNativeTarget "iTindrTests" */;
+			buildPhases = (
+				46A47A6A281909CF001C0F09 /* Sources */,
+				46A47A6B281909CF001C0F09 /* Frameworks */,
+				46A47A6C281909CF001C0F09 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				46A47A70281909CF001C0F09 /* PBXTargetDependency */,
+			);
+			name = iTindrTests;
+			productName = iTindrTests;
+			productReference = 46A47A6E281909CF001C0F09 /* iTindrTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		46A47A77281909CF001C0F09 /* iTindrUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 46A47A88281909CF001C0F09 /* Build configuration list for PBXNativeTarget "iTindrUITests" */;
+			buildPhases = (
+				46A47A74281909CF001C0F09 /* Sources */,
+				46A47A75281909CF001C0F09 /* Frameworks */,
+				46A47A76281909CF001C0F09 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				46A47A7A281909CF001C0F09 /* PBXTargetDependency */,
+			);
+			name = iTindrUITests;
+			productName = iTindrUITests;
+			productReference = 46A47A78281909CF001C0F09 /* iTindrUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		46A47A50281909CD001C0F09 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					46A47A57281909CD001C0F09 = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+					46A47A6D281909CF001C0F09 = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = 46A47A57281909CD001C0F09;
+					};
+					46A47A77281909CF001C0F09 = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = 46A47A57281909CD001C0F09;
+					};
+				};
+			};
+			buildConfigurationList = 46A47A53281909CD001C0F09 /* Build configuration list for PBXProject "iTindr" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 46A47A4F281909CD001C0F09;
+			productRefGroup = 46A47A59281909CD001C0F09 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				46A47A57281909CD001C0F09 /* iTindr */,
+				46A47A6D281909CF001C0F09 /* iTindrTests */,
+				46A47A77281909CF001C0F09 /* iTindrUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		46A47A56281909CD001C0F09 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				46A47A68281909CE001C0F09 /* LaunchScreen.storyboard in Resources */,
+				46A47A65281909CE001C0F09 /* Assets.xcassets in Resources */,
+				46A47A63281909CD001C0F09 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		46A47A6C281909CF001C0F09 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		46A47A76281909CF001C0F09 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		46A47A54281909CD001C0F09 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				46A47A60281909CD001C0F09 /* ViewController.swift in Sources */,
+				46A47A5C281909CD001C0F09 /* AppDelegate.swift in Sources */,
+				46A47A5E281909CD001C0F09 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		46A47A6A281909CF001C0F09 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				46A47A73281909CF001C0F09 /* iTindrTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		46A47A74281909CF001C0F09 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				46A47A7F281909CF001C0F09 /* iTindrUITestsLaunchTests.swift in Sources */,
+				46A47A7D281909CF001C0F09 /* iTindrUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		46A47A70281909CF001C0F09 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 46A47A57281909CD001C0F09 /* iTindr */;
+			targetProxy = 46A47A6F281909CF001C0F09 /* PBXContainerItemProxy */;
+		};
+		46A47A7A281909CF001C0F09 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 46A47A57281909CD001C0F09 /* iTindr */;
+			targetProxy = 46A47A79281909CF001C0F09 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		46A47A61281909CD001C0F09 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				46A47A62281909CD001C0F09 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		46A47A66281909CE001C0F09 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				46A47A67281909CE001C0F09 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		46A47A80281909CF001C0F09 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		46A47A81281909CF001C0F09 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		46A47A83281909CF001C0F09 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = B5FH5575Q3;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = iTindr/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = LogMain.iTindr;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		46A47A84281909CF001C0F09 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = B5FH5575Q3;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = iTindr/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = LogMain.iTindr;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		46A47A86281909CF001C0F09 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = B5FH5575Q3;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = LogMain.iTindrTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iTindr.app/iTindr";
+			};
+			name = Debug;
+		};
+		46A47A87281909CF001C0F09 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = B5FH5575Q3;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = LogMain.iTindrTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iTindr.app/iTindr";
+			};
+			name = Release;
+		};
+		46A47A89281909CF001C0F09 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = B5FH5575Q3;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = LogMain.iTindrUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = iTindr;
+			};
+			name = Debug;
+		};
+		46A47A8A281909CF001C0F09 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = B5FH5575Q3;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = LogMain.iTindrUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = iTindr;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		46A47A53281909CD001C0F09 /* Build configuration list for PBXProject "iTindr" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				46A47A80281909CF001C0F09 /* Debug */,
+				46A47A81281909CF001C0F09 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		46A47A82281909CF001C0F09 /* Build configuration list for PBXNativeTarget "iTindr" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				46A47A83281909CF001C0F09 /* Debug */,
+				46A47A84281909CF001C0F09 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		46A47A85281909CF001C0F09 /* Build configuration list for PBXNativeTarget "iTindrTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				46A47A86281909CF001C0F09 /* Debug */,
+				46A47A87281909CF001C0F09 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		46A47A88281909CF001C0F09 /* Build configuration list for PBXNativeTarget "iTindrUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				46A47A89281909CF001C0F09 /* Debug */,
+				46A47A8A281909CF001C0F09 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 46A47A50281909CD001C0F09 /* Project object */;
+}
