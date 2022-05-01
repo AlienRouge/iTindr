@@ -5,32 +5,38 @@ class RegisterViewController: UIViewController {
     @IBOutlet weak var emailArea: UITextField!
     @IBOutlet weak var passwordArea: UITextField!
     @IBOutlet weak var passwordRepeatArea: UITextField!
+    @IBOutlet weak var errorArea: UILabel!
     var overlay: UIView? = nil
 
 
     @IBAction func registerBtnAction(_ sender: Any) {
         guard (emailArea.text != "") else {
-            print("EmptyEmail")
+            setErrorMessage(message: "Введите E-Mail")
             return
         }
 
         guard (AuthUtils.isValidEmail(emailArea.text ?? "WrongEmail")) else {
-            print("WrongEmail")
+            setErrorMessage(message: "Введите корректный E-Mail")
             return
         }
 
         guard (passwordArea.text != "") else {
-            print("EmptyPass")
+            setErrorMessage(message: "Введите пароль")
+            return
+        }
+
+        guard (passwordArea.text?.count ?? 0 < 6) else {
+            setErrorMessage(message: "Слишком короткий пароль")
             return
         }
 
         guard (passwordRepeatArea.text != "") else {
-            print("EmptyPassRepeat")
+            setErrorMessage(message: "Повторите пароль")
             return
         }
 
         guard (passwordRepeatArea.text == passwordArea.text) else {
-            print("PassIncorrect")
+            setErrorMessage(message: "Пароли не совпадают")
             return
         }
 
@@ -57,9 +63,15 @@ class RegisterViewController: UIViewController {
             print("Server error!")
         })
     }
+    
+    func setErrorMessage(message: String){
+        errorArea.isHidden = false
+        errorArea.text = message
+    }
 
     func onRegisterFailHandler() {
         hideOverlay()
+        setErrorMessage(message: "Регистрация не удалась")
     }
 
     func showOverlay() {

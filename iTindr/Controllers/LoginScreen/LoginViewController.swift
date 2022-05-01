@@ -4,16 +4,17 @@ class LoginViewController: UIViewController {
 
     @IBOutlet weak var emailArea: UITextField!
     @IBOutlet weak var passwordArea: UITextField!
+    @IBOutlet weak var errorArea: UILabel!
     var overlay: UIView? = nil
 
     @IBAction func loginBtnAction(_ sender: Any) {
         guard (AuthUtils.isValidEmail(emailArea.text ?? "WrongEmail")) else {
-            print("WrongEmail")
+            setErrorMessage(message: "Введите корректный E-Mail")
             return
         }
 
         guard (passwordArea.text != "") else {
-            print("EmptyPass")
+            setErrorMessage(message: "Введите пароль")
             return
         }
 
@@ -41,6 +42,12 @@ class LoginViewController: UIViewController {
 
     func onLoginFailHandler() {
         overlay?.removeFromSuperview()
+        setErrorMessage(message: "Неверный E-Mail или пароль")
+    }
+    
+    func setErrorMessage(message: String){
+        errorArea.isHidden = false
+        errorArea.text = message
     }
 
     override func viewDidLoad() {
