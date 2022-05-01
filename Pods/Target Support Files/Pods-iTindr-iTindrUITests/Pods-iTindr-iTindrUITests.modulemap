@@ -1,0 +1,6 @@
+framework module Pods_iTindr_iTindrUITests {
+  umbrella header "Pods-iTindr-iTindrUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

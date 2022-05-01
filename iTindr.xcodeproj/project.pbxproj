@@ -7,15 +7,35 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		46A47A5C281909CD001C0F09 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46A47A5B281909CD001C0F09 /* AppDelegate.swift */; };
+		461CB64A281E573200065020 /* FlowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 461CB649281E573200065020 /* FlowViewController.swift */; };
+		4629B58B281DA49F0009DE5D /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4629B58A281DA49F0009DE5D /* ProfileViewController.swift */; };
+		4652D5B8281BD2470093C5EA /* EditProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4652D5B7281BD2470093C5EA /* EditProfileViewController.swift */; };
 		46A47A5E281909CD001C0F09 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46A47A5D281909CD001C0F09 /* SceneDelegate.swift */; };
 		46A47A60281909CD001C0F09 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46A47A5F281909CD001C0F09 /* ViewController.swift */; };
-		46A47A63281909CD001C0F09 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46A47A61281909CD001C0F09 /* Main.storyboard */; };
 		46A47A65281909CE001C0F09 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 46A47A64281909CE001C0F09 /* Assets.xcassets */; };
 		46A47A68281909CE001C0F09 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46A47A66281909CE001C0F09 /* LaunchScreen.storyboard */; };
 		46A47A73281909CF001C0F09 /* iTindrTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46A47A72281909CF001C0F09 /* iTindrTests.swift */; };
 		46A47A7D281909CF001C0F09 /* iTindrUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46A47A7C281909CF001C0F09 /* iTindrUITests.swift */; };
 		46A47A7F281909CF001C0F09 /* iTindrUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46A47A7E281909CF001C0F09 /* iTindrUITestsLaunchTests.swift */; };
+		46A47A912819135C001C0F09 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46A47A902819135C001C0F09 /* GradientView.swift */; };
+		46A47A9428191741001C0F09 /* LoginStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46A47A9328191741001C0F09 /* LoginStoryboard.storyboard */; };
+		46A47A97281917ED001C0F09 /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46A47A96281917ED001C0F09 /* AuthViewController.swift */; };
+		46DB9540281AE8C700901CAA /* DecodeTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46DB953F281AE8C700901CAA /* DecodeTypes.swift */; };
+		46DB9542281AE8F600901CAA /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46DB9541281AE8F600901CAA /* API.swift */; };
+		46DB9544281AF1E500901CAA /* AuthUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46DB9543281AF1E500901CAA /* AuthUtils.swift */; };
+		46E1F6E6281963D70062EDBB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46A47A5B281909CD001C0F09 /* AppDelegate.swift */; };
+		6EECE1B01B6FE8C9C72B47CA /* TopicList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EECED9563F99DC5B4DC800A /* TopicList.swift */; };
+		6EECE67906F8777C5B533846 /* UserActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EECE910C9285CE156BF1EE5 /* UserActions.swift */; };
+		6EECE9BC7F518B1FDF24F07C /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EECE0758C7163DC8E1C923C /* LoginViewController.swift */; };
+		6EECEAD770444C627B9713E6 /* JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EECE9044F13D978D2E7AC9E /* JSON.swift */; };
+		6EECEC52F902FC7C3C5199B0 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EECE5CE67F17010A0486B77 /* RegisterViewController.swift */; };
+		6EECED417B10D4AE1EAD03F0 /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EECE81E63FB91393B43C2DF /* Store.swift */; };
+		6EECED4C5634C44954AA5199 /* FlowList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EECEE43F09F79A84415446E /* FlowList.swift */; };
+		6EECED66E9DFB063F8195393 /* UserProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EECE97FF900E6F976012636 /* UserProfile.swift */; };
+		6EECEFCD6CCE7F99936F1D74 /* Overlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EECE2096769C85005DE2A03 /* Overlay.swift */; };
+		D459B96868913EAEF26E56B9 /* Pods_iTindrTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F38F2C34C37ED90AC91DB397 /* Pods_iTindrTests.framework */; };
+		DF388246C8961227F207FD43 /* Pods_iTindr.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3ADA1518B491E221C8F1EC6 /* Pods_iTindr.framework */; };
+		F823B446AD1D0D9BD91C2A52 /* Pods_iTindr_iTindrUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CC8E1DA33BBE70234BDB28A /* Pods_iTindr_iTindrUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,11 +56,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		08E1CD91C2340C05FE46A27D /* Pods-iTindrTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iTindrTests.release.xcconfig"; path = "Target Support Files/Pods-iTindrTests/Pods-iTindrTests.release.xcconfig"; sourceTree = "<group>"; };
+		09FA11689644AE7C5A0F0741 /* Pods-iTindr.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iTindr.release.xcconfig"; path = "Target Support Files/Pods-iTindr/Pods-iTindr.release.xcconfig"; sourceTree = "<group>"; };
+		1B7E2F2465B32C188876903D /* Pods-iTindr-iTindrUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iTindr-iTindrUITests.release.xcconfig"; path = "Target Support Files/Pods-iTindr-iTindrUITests/Pods-iTindr-iTindrUITests.release.xcconfig"; sourceTree = "<group>"; };
+		2CC8E1DA33BBE70234BDB28A /* Pods_iTindr_iTindrUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iTindr_iTindrUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		461CB649281E573200065020 /* FlowViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowViewController.swift; sourceTree = "<group>"; };
+		4629B58A281DA49F0009DE5D /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		4652D5B7281BD2470093C5EA /* EditProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileViewController.swift; sourceTree = "<group>"; };
 		46A47A58281909CD001C0F09 /* iTindr.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iTindr.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		46A47A5B281909CD001C0F09 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		46A47A5D281909CD001C0F09 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		46A47A5F281909CD001C0F09 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		46A47A62281909CD001C0F09 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		46A47A64281909CE001C0F09 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		46A47A67281909CE001C0F09 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		46A47A69281909CE001C0F09 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -49,6 +75,26 @@
 		46A47A78281909CF001C0F09 /* iTindrUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iTindrUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		46A47A7C281909CF001C0F09 /* iTindrUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iTindrUITests.swift; sourceTree = "<group>"; };
 		46A47A7E281909CF001C0F09 /* iTindrUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iTindrUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		46A47A902819135C001C0F09 /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
+		46A47A9328191741001C0F09 /* LoginStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LoginStoryboard.storyboard; sourceTree = "<group>"; };
+		46A47A96281917ED001C0F09 /* AuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
+		46DB953F281AE8C700901CAA /* DecodeTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecodeTypes.swift; sourceTree = "<group>"; };
+		46DB9541281AE8F600901CAA /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		46DB9543281AF1E500901CAA /* AuthUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthUtils.swift; sourceTree = "<group>"; };
+		479AA30DC11BA604408925F4 /* Pods-iTindr-iTindrUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iTindr-iTindrUITests.debug.xcconfig"; path = "Target Support Files/Pods-iTindr-iTindrUITests/Pods-iTindr-iTindrUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		6EECE0758C7163DC8E1C923C /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		6EECE2096769C85005DE2A03 /* Overlay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Overlay.swift; sourceTree = "<group>"; };
+		6EECE5CE67F17010A0486B77 /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		6EECE81E63FB91393B43C2DF /* Store.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
+		6EECE9044F13D978D2E7AC9E /* JSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSON.swift; sourceTree = "<group>"; };
+		6EECE910C9285CE156BF1EE5 /* UserActions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserActions.swift; sourceTree = "<group>"; };
+		6EECE97FF900E6F976012636 /* UserProfile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserProfile.swift; sourceTree = "<group>"; };
+		6EECED9563F99DC5B4DC800A /* TopicList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopicList.swift; sourceTree = "<group>"; };
+		6EECEE43F09F79A84415446E /* FlowList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlowList.swift; sourceTree = "<group>"; };
+		83800CA4A9C4B68B1F1D7541 /* Pods-iTindr.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iTindr.debug.xcconfig"; path = "Target Support Files/Pods-iTindr/Pods-iTindr.debug.xcconfig"; sourceTree = "<group>"; };
+		92A68A7969344E49FC5EECF7 /* Pods-iTindrTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iTindrTests.debug.xcconfig"; path = "Target Support Files/Pods-iTindrTests/Pods-iTindrTests.debug.xcconfig"; sourceTree = "<group>"; };
+		F38F2C34C37ED90AC91DB397 /* Pods_iTindrTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iTindrTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F3ADA1518B491E221C8F1EC6 /* Pods_iTindr.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iTindr.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +102,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DF388246C8961227F207FD43 /* Pods_iTindr.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +110,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D459B96868913EAEF26E56B9 /* Pods_iTindrTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,6 +118,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F823B446AD1D0D9BD91C2A52 /* Pods_iTindr_iTindrUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +132,8 @@
 				46A47A71281909CF001C0F09 /* iTindrTests */,
 				46A47A7B281909CF001C0F09 /* iTindrUITests */,
 				46A47A59281909CD001C0F09 /* Products */,
+				6A9FA50C9D734BFF4D2B63B9 /* Pods */,
+				5643E7850AD5FC68C6C7BA46 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,13 +150,16 @@
 		46A47A5A281909CD001C0F09 /* iTindr */ = {
 			isa = PBXGroup;
 			children = (
+				46E1F6E728197A430062EDBB /* DAL */,
+				46A47A92281914A0001C0F09 /* LoginScreen */,
+				46A47A8B281910CC001C0F09 /* Utils */,
 				46A47A5B281909CD001C0F09 /* AppDelegate.swift */,
 				46A47A5D281909CD001C0F09 /* SceneDelegate.swift */,
 				46A47A5F281909CD001C0F09 /* ViewController.swift */,
-				46A47A61281909CD001C0F09 /* Main.storyboard */,
 				46A47A64281909CE001C0F09 /* Assets.xcassets */,
 				46A47A66281909CE001C0F09 /* LaunchScreen.storyboard */,
 				46A47A69281909CE001C0F09 /* Info.plist */,
+				6EECE6EBA7B342D8046DC552 /* Store */,
 			);
 			path = iTindr;
 			sourceTree = "<group>";
@@ -127,6 +181,83 @@
 			path = iTindrUITests;
 			sourceTree = "<group>";
 		};
+		46A47A8B281910CC001C0F09 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				46A47A902819135C001C0F09 /* GradientView.swift */,
+				46DB9543281AF1E500901CAA /* AuthUtils.swift */,
+				6EECE9044F13D978D2E7AC9E /* JSON.swift */,
+				6EECE2096769C85005DE2A03 /* Overlay.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		46A47A92281914A0001C0F09 /* LoginScreen */ = {
+			isa = PBXGroup;
+			children = (
+				46A47A952819177E001C0F09 /* Controllers */,
+				46A47A9328191741001C0F09 /* LoginStoryboard.storyboard */,
+			);
+			path = LoginScreen;
+			sourceTree = "<group>";
+		};
+		46A47A952819177E001C0F09 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				46A47A96281917ED001C0F09 /* AuthViewController.swift */,
+				6EECE5CE67F17010A0486B77 /* RegisterViewController.swift */,
+				6EECE0758C7163DC8E1C923C /* LoginViewController.swift */,
+				4652D5B7281BD2470093C5EA /* EditProfileViewController.swift */,
+				4629B58A281DA49F0009DE5D /* ProfileViewController.swift */,
+				461CB649281E573200065020 /* FlowViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		46E1F6E728197A430062EDBB /* DAL */ = {
+			isa = PBXGroup;
+			children = (
+				46DB953F281AE8C700901CAA /* DecodeTypes.swift */,
+				46DB9541281AE8F600901CAA /* API.swift */,
+				6EECE910C9285CE156BF1EE5 /* UserActions.swift */,
+			);
+			path = DAL;
+			sourceTree = "<group>";
+		};
+		5643E7850AD5FC68C6C7BA46 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F3ADA1518B491E221C8F1EC6 /* Pods_iTindr.framework */,
+				2CC8E1DA33BBE70234BDB28A /* Pods_iTindr_iTindrUITests.framework */,
+				F38F2C34C37ED90AC91DB397 /* Pods_iTindrTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6A9FA50C9D734BFF4D2B63B9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				83800CA4A9C4B68B1F1D7541 /* Pods-iTindr.debug.xcconfig */,
+				09FA11689644AE7C5A0F0741 /* Pods-iTindr.release.xcconfig */,
+				479AA30DC11BA604408925F4 /* Pods-iTindr-iTindrUITests.debug.xcconfig */,
+				1B7E2F2465B32C188876903D /* Pods-iTindr-iTindrUITests.release.xcconfig */,
+				92A68A7969344E49FC5EECF7 /* Pods-iTindrTests.debug.xcconfig */,
+				08E1CD91C2340C05FE46A27D /* Pods-iTindrTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		6EECE6EBA7B342D8046DC552 /* Store */ = {
+			isa = PBXGroup;
+			children = (
+				6EECE97FF900E6F976012636 /* UserProfile.swift */,
+				6EECED9563F99DC5B4DC800A /* TopicList.swift */,
+				6EECEE43F09F79A84415446E /* FlowList.swift */,
+				6EECE81E63FB91393B43C2DF /* Store.swift */,
+			);
+			path = Store;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -134,9 +265,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 46A47A82281909CF001C0F09 /* Build configuration list for PBXNativeTarget "iTindr" */;
 			buildPhases = (
+				3951F11406C3311ED9123472 /* [CP] Check Pods Manifest.lock */,
 				46A47A54281909CD001C0F09 /* Sources */,
 				46A47A55281909CD001C0F09 /* Frameworks */,
 				46A47A56281909CD001C0F09 /* Resources */,
+				D3E4813D9CD7745BE55FEB8C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -151,6 +284,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 46A47A85281909CF001C0F09 /* Build configuration list for PBXNativeTarget "iTindrTests" */;
 			buildPhases = (
+				E86F7071F65933C92A2B1ADD /* [CP] Check Pods Manifest.lock */,
 				46A47A6A281909CF001C0F09 /* Sources */,
 				46A47A6B281909CF001C0F09 /* Frameworks */,
 				46A47A6C281909CF001C0F09 /* Resources */,
@@ -169,9 +303,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 46A47A88281909CF001C0F09 /* Build configuration list for PBXNativeTarget "iTindrUITests" */;
 			buildPhases = (
+				7569CCEBFB6583E7B0D569C3 /* [CP] Check Pods Manifest.lock */,
 				46A47A74281909CF001C0F09 /* Sources */,
 				46A47A75281909CF001C0F09 /* Frameworks */,
 				46A47A76281909CF001C0F09 /* Resources */,
+				91D7E85DB097D6EEC6006735 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -233,7 +369,7 @@
 			files = (
 				46A47A68281909CE001C0F09 /* LaunchScreen.storyboard in Resources */,
 				46A47A65281909CE001C0F09 /* Assets.xcassets in Resources */,
-				46A47A63281909CD001C0F09 /* Main.storyboard in Resources */,
+				46A47A9428191741001C0F09 /* LoginStoryboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,14 +389,134 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		3951F11406C3311ED9123472 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-iTindr-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7569CCEBFB6583E7B0D569C3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-iTindr-iTindrUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		91D7E85DB097D6EEC6006735 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-iTindr-iTindrUITests/Pods-iTindr-iTindrUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-iTindr-iTindrUITests/Pods-iTindr-iTindrUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-iTindr-iTindrUITests/Pods-iTindr-iTindrUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D3E4813D9CD7745BE55FEB8C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-iTindr/Pods-iTindr-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-iTindr/Pods-iTindr-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-iTindr/Pods-iTindr-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E86F7071F65933C92A2B1ADD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-iTindrTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		46A47A54281909CD001C0F09 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				46A47A60281909CD001C0F09 /* ViewController.swift in Sources */,
-				46A47A5C281909CD001C0F09 /* AppDelegate.swift in Sources */,
+				46DB9544281AF1E500901CAA /* AuthUtils.swift in Sources */,
+				4652D5B8281BD2470093C5EA /* EditProfileViewController.swift in Sources */,
+				46A47A97281917ED001C0F09 /* AuthViewController.swift in Sources */,
+				46DB9540281AE8C700901CAA /* DecodeTypes.swift in Sources */,
+				46A47A912819135C001C0F09 /* GradientView.swift in Sources */,
+				46DB9542281AE8F600901CAA /* API.swift in Sources */,
+				4629B58B281DA49F0009DE5D /* ProfileViewController.swift in Sources */,
+				461CB64A281E573200065020 /* FlowViewController.swift in Sources */,
+				46E1F6E6281963D70062EDBB /* AppDelegate.swift in Sources */,
 				46A47A5E281909CD001C0F09 /* SceneDelegate.swift in Sources */,
+				6EECEC52F902FC7C3C5199B0 /* RegisterViewController.swift in Sources */,
+				6EECE9BC7F518B1FDF24F07C /* LoginViewController.swift in Sources */,
+				6EECE67906F8777C5B533846 /* UserActions.swift in Sources */,
+				6EECEAD770444C627B9713E6 /* JSON.swift in Sources */,
+				6EECED66E9DFB063F8195393 /* UserProfile.swift in Sources */,
+				6EECE1B01B6FE8C9C72B47CA /* TopicList.swift in Sources */,
+				6EECEFCD6CCE7F99936F1D74 /* Overlay.swift in Sources */,
+				6EECED4C5634C44954AA5199 /* FlowList.swift in Sources */,
+				6EECED417B10D4AE1EAD03F0 /* Store.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,14 +553,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		46A47A61281909CD001C0F09 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				46A47A62281909CD001C0F09 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		46A47A66281909CE001C0F09 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -434,6 +682,7 @@
 		};
 		46A47A83281909CF001C0F09 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 83800CA4A9C4B68B1F1D7541 /* Pods-iTindr.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -444,7 +693,8 @@
 				INFOPLIST_FILE = iTindr/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = LoginStoryboard;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -462,6 +712,7 @@
 		};
 		46A47A84281909CF001C0F09 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 09FA11689644AE7C5A0F0741 /* Pods-iTindr.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -472,7 +723,8 @@
 				INFOPLIST_FILE = iTindr/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = LoginStoryboard;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -490,6 +742,7 @@
 		};
 		46A47A86281909CF001C0F09 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 92A68A7969344E49FC5EECF7 /* Pods-iTindrTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -510,6 +763,7 @@
 		};
 		46A47A87281909CF001C0F09 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 08E1CD91C2340C05FE46A27D /* Pods-iTindrTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -530,6 +784,7 @@
 		};
 		46A47A89281909CF001C0F09 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 479AA30DC11BA604408925F4 /* Pods-iTindr-iTindrUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -548,6 +803,7 @@
 		};
 		46A47A8A281909CF001C0F09 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1B7E2F2465B32C188876903D /* Pods-iTindr-iTindrUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

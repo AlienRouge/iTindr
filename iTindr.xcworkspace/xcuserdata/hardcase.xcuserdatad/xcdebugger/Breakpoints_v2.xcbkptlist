@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "89EDFA2D-38DB-4B42-9C05-9E7D1FBCC3D2"
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "8221C3C0-0A46-4500-959D-324FAE2CBBAE"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "iTindr/DAL/API.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "24"
+            endingLineNumber = "24"
+            landmarkName = "getTopics()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "55949609-E9BE-4786-913D-0BA966516CD9"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "iTindr/DAL/API.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "23"
+            endingLineNumber = "23"
+            landmarkName = "API"
+            landmarkType = "14">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "3C2F4B17-0E17-4415-A4BA-20A14232AB93"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "iTindr/LoginScreen/Controllers/ChangeProfileViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "4"
+            endingLineNumber = "4"
+            landmarkName = "ChangeProfileViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "3C2F4B17-0E17-4415-A4BA-20A14232AB93 - 46a91dd1570f0708"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "iTindr.ChangeProfileViewController.__allocating_init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; iTindr.ChangeProfileViewController"
+                  moduleName = "iTindr"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/hardcase/Desktop/Projects/iTindr/iTindr/LoginScreen/Controllers/ChangeProfileViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "31">
+               </Location>
+               <Location
+                  uuid = "3C2F4B17-0E17-4415-A4BA-20A14232AB93 - 9a6502f8c514347b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "iTindr.ChangeProfileViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; iTindr.ChangeProfileViewController"
+                  moduleName = "iTindr"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/hardcase/Desktop/Projects/iTindr/iTindr/LoginScreen/Controllers/ChangeProfileViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "6"
+                  endingLineNumber = "6"
+                  offsetFromSymbolStart = "181">
+               </Location>
+               <Location
+                  uuid = "3C2F4B17-0E17-4415-A4BA-20A14232AB93 - b13730ff54410006"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "iTindr.ChangeProfileViewController.__allocating_init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;iTindr.ChangeProfileViewController&gt;"
+                  moduleName = "iTindr"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/hardcase/Desktop/Projects/iTindr/iTindr/LoginScreen/Controllers/ChangeProfileViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "23">
+               </Location>
+               <Location
+                  uuid = "3C2F4B17-0E17-4415-A4BA-20A14232AB93 - 565e1c4edb1a8fb9"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "iTindr.ChangeProfileViewController.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;iTindr.ChangeProfileViewController&gt;"
+                  moduleName = "iTindr"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/hardcase/Desktop/Projects/iTindr/iTindr/LoginScreen/Controllers/ChangeProfileViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "6"
+                  endingLineNumber = "6"
+                  offsetFromSymbolStart = "138">
+               </Location>
+               <Location
+                  uuid = "3C2F4B17-0E17-4415-A4BA-20A14232AB93 - 48f0015cabb18652"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "iTindr.ChangeProfileViewController.__deallocating_deinit"
+                  moduleName = "iTindr"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/hardcase/Desktop/Projects/iTindr/iTindr/LoginScreen/Controllers/ChangeProfileViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "16">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
