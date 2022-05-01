@@ -42,13 +42,7 @@ class FlowViewController: UIViewController {
         })
     }
     @IBAction func sendMessageBtnAction(_ sender: Any) {
-        let storyboard = UIStoryboard(name: "LoginStoryboard", bundle: nil)
-        let nextVC = storyboard.instantiateViewController(identifier: "ChatPage")
-
-        nextVC.modalPresentationStyle = .fullScreen
-        nextVC.modalTransitionStyle = .flipHorizontal
-
-        self.initViewData()
+        initViewData()
         hideMatchOverlay()
         tabBarController!.selectedIndex = 2
     }
@@ -111,6 +105,22 @@ class FlowViewController: UIViewController {
         matchOverlay.frame = view.frame
         tabBarController?.view.addSubview(matchOverlay!)
         userTagList.textFont = UIFont.systemFont(ofSize: 15)
+        
+        let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(userAvatarTapped(tapGestureRecognizer:)))
+            userAvatar.isUserInteractionEnabled = true
+            userAvatar.addGestureRecognizer(tapGestureRecognizer)
+    }
+
+    @objc func userAvatarTapped(tapGestureRecognizer: UITapGestureRecognizer)
+    {
+        Store.setCurrentUserProfile(profile: profile!)
+        let storyboard = UIStoryboard(name: "LoginStoryboard", bundle: nil)
+        let nextVC = storyboard.instantiateViewController(identifier: "AboutUser")
+
+        nextVC.modalPresentationStyle = .fullScreen
+        nextVC.modalTransitionStyle = .flipHorizontal
+
+        show(nextVC, sender: self)
     }
 
     func showOverlay() {

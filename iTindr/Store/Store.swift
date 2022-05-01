@@ -4,6 +4,15 @@ struct Store {
     static var flow: FlowList = FlowList()
     static var user: User = User()
     static var topics: TopicList = TopicList()
+    static var currentUserProfile: ProfileData? = nil
+
+    static func getCurrentUserProfile() -> ProfileData?{
+        currentUserProfile ?? nil
+    }
+
+    static func setCurrentUserProfile(profile: ProfileData){
+        currentUserProfile = profile
+    }
 
     static func loadProfileDataFromServer(successCallback: @escaping () -> Void, errorCallBack: @escaping () -> Void) {
         UserActions.profile(successCallback: { profileData in

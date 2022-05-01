@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		461CB64D281EF84600065020 /* AboutUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 461CB64C281EF84600065020 /* AboutUserViewController.swift */; };
 		46A47A5E281909CD001C0F09 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46A47A5D281909CD001C0F09 /* SceneDelegate.swift */; };
 		46A47A60281909CD001C0F09 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46A47A5F281909CD001C0F09 /* ViewController.swift */; };
 		46A47A65281909CE001C0F09 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 46A47A64281909CE001C0F09 /* Assets.xcassets */; };
@@ -59,6 +60,7 @@
 		09FA11689644AE7C5A0F0741 /* Pods-iTindr.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iTindr.release.xcconfig"; path = "Target Support Files/Pods-iTindr/Pods-iTindr.release.xcconfig"; sourceTree = "<group>"; };
 		1B7E2F2465B32C188876903D /* Pods-iTindr-iTindrUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iTindr-iTindrUITests.release.xcconfig"; path = "Target Support Files/Pods-iTindr-iTindrUITests/Pods-iTindr-iTindrUITests.release.xcconfig"; sourceTree = "<group>"; };
 		2CC8E1DA33BBE70234BDB28A /* Pods_iTindr_iTindrUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iTindr_iTindrUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		461CB64C281EF84600065020 /* AboutUserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutUserViewController.swift; sourceTree = "<group>"; };
 		46A47A58281909CD001C0F09 /* iTindr.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iTindr.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		46A47A5B281909CD001C0F09 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		46A47A5D281909CD001C0F09 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -123,6 +125,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		461CB64B281EF82A00065020 /* AboutUser */ = {
+			isa = PBXGroup;
+			children = (
+				461CB64C281EF84600065020 /* AboutUserViewController.swift */,
+			);
+			path = AboutUser;
+			sourceTree = "<group>";
+		};
 		46A47A4F281909CD001C0F09 = {
 			isa = PBXGroup;
 			children = (
@@ -278,6 +288,7 @@
 		6EECEC1EEC0310D70EB57DA7 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				461CB64B281EF82A00065020 /* AboutUser */,
 				6EECE85A617B0D96A662F3FA /* LoginScreen */,
 				6EECE0672BC5AED287479361 /* RegisterScreen */,
 				6EECE36E2546F7037CCE4498 /* EditProfileScreen */,
@@ -543,6 +554,7 @@
 				6EECEEFA76F887830D0BFD5E /* LoginViewController.swift in Sources */,
 				6EECE8A26D5EDF53B4C4A17B /* RegisterViewController.swift in Sources */,
 				6EECE3D52A3E9288A33C811C /* EditProfileViewController.swift in Sources */,
+				461CB64D281EF84600065020 /* AboutUserViewController.swift in Sources */,
 				6EECE6C17ADC96241696A066 /* FlowViewController.swift in Sources */,
 				6EECEAF87796E15B34F452C1 /* ProfileViewController.swift in Sources */,
 			);

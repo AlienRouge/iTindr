@@ -25,12 +25,27 @@ class LoginViewController: UIViewController {
                 email: emailArea.text!,
                 password: passwordArea.text!,
                 successCallback: {
-                    Store.loadAllDataFromServer(successCallback: self.onLoginSuccessHandler, errorCallBack: { })
+                    Store.loadAllDataFromServer(successCallback: self.onLoginSuccessHandler, errorCallBack: {})
                 },
                 errorCallBack: onLoginFailHandler)
     }
 
     func onLoginSuccessHandler() {
+        saveLoginData()
+        presentNextVC()
+    }
+
+    func onLoginFailHandler() {
+        overlay?.removeFromSuperview()
+        setErrorMessage(message: "Неверный E-Mail или пароль")
+    }
+
+    func setErrorMessage(message: String) {
+        errorArea.isHidden = false
+        errorArea.text = message
+    }
+
+    func presentNextVC() {
         let storyboard = UIStoryboard(name: "LoginStoryboard", bundle: nil)
         let nextVC = storyboard.instantiateViewController(identifier: "MainTabBarController")
 
@@ -40,17 +55,24 @@ class LoginViewController: UIViewController {
         present(nextVC, animated: true, completion: nil)
     }
 
-    func onLoginFailHandler() {
-        overlay?.removeFromSuperview()
-        setErrorMessage(message: "Неверный E-Mail или пароль")
+    func saveLoginData() {
+        print("Save")
+        UserDefaults.standard.set(emailArea.text, forKey: "emailValue")
+        UserDefaults.standard.set(passwordArea.text, forKey: "passwordValue")
     }
-    
-    func setErrorMessage(message: String){
-        errorArea.isHidden = false
-        errorArea.text = message
+
+    func tryLoadLoginData() {
+        if let email = UserDefaults.standard.string(forKey: "emailValue") {
+            emailArea.text = email
+        }
+
+        if let password = UserDefaults.standard.string(forKey: "passwordValue") {
+            passwordArea.text = password
+        }
     }
 
     override func viewDidLoad() {
+        tryLoadLoginData()
         super.viewDidLoad()
     }
 
