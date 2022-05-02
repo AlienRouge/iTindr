@@ -78,6 +78,16 @@ extension PeopleViewController: UICollectionViewDataSource, UICollectionViewDele
         }
     }
 
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let profile = profiles[indexPath.row]
+        Store.setCurrentUserProfile(profile: profile)
+
+        let storyboard = UIStoryboard(name: "LoginStoryboard", bundle: nil)
+        let nextVC = storyboard.instantiateViewController(identifier: "UserProfile")
+
+        show(nextVC, sender: self)
+    }
+
     func generateLayout() -> UICollectionViewLayout {
         let itemSize = NSCollectionLayoutSize(
                 widthDimension: .fractionalWidth(1 / 3),

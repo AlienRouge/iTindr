@@ -1572,7 +1572,7 @@
         <!--Профиль-->
         <scene sceneID="Krq-La-EBX">
             <objects>
-                <viewController id="GX6-Ld-7Vd" customClass="UserProfileViewController" customModule="iTindr" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="UserProfile" useStoryboardIdentifierAsRestorationIdentifier="YES" id="GX6-Ld-7Vd" customClass="UserProfileViewController" customModule="iTindr" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ab4-Il-r7c">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

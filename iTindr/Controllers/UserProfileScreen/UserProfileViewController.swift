@@ -30,6 +30,8 @@ class UserProfileViewController: UIViewController {
         userAvatar.layer.masksToBounds = true
         userAvatar.layer.cornerRadius = userAvatar.bounds.width / 2
         userTagList.textFont = UIFont.systemFont(ofSize: 20)
+        tabBarController?.tabBar.isHidden = true
+        navigationController?.navigationBar.tintColor = UIColor(red: 250/255.0, green: 19/255.0, blue: 171/255.0, alpha: 1.0);
     }
 
     func initTagList() {
@@ -56,6 +58,14 @@ class UserProfileViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         initViewData()
+    }
+
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+
+        if isMovingFromParent {
+            tabBarController?.tabBar.isHidden = false
+        }
     }
 }
 
