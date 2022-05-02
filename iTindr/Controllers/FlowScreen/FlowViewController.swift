@@ -8,7 +8,8 @@ class FlowViewController: UIViewController {
     @IBOutlet weak var userDescription: UILabel!
     @IBOutlet weak var likeBtn: UIButton!
     @IBOutlet weak var skipBtn: UIButton!
-    @IBOutlet weak var matchOverlay: UIView!
+    @IBOutlet weak var matchView: UIView!
+    
     var overlay: UIView? = nil
     var profile: ProfileData? = nil
     
@@ -18,8 +19,7 @@ class FlowViewController: UIViewController {
         UserActions.likeUser(userId: userId,
                 successCallback:
                 { isMutual in
-                    print(isMutual)
-                    if true {
+                    if isMutual {
                         self.showMatchOverlay()
                     } else {
                         self.initViewData()
@@ -41,6 +41,7 @@ class FlowViewController: UIViewController {
             self.hideOverlay()
         })
     }
+    
     @IBAction func sendMessageBtnAction(_ sender: Any) {
         initViewData()
         hideMatchOverlay()
@@ -102,8 +103,8 @@ class FlowViewController: UIViewController {
         overlay = Overlay.getOverlay(view: view)
         userAvatar.layer.masksToBounds = true
         userAvatar.layer.cornerRadius = userAvatar.bounds.width / 2
-        matchOverlay.frame = view.frame
-        tabBarController?.view.addSubview(matchOverlay!)
+        matchView.frame = view.frame
+        tabBarController?.view.addSubview(matchView!)
         userTagList.textFont = UIFont.systemFont(ofSize: 15)
         
         let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(userAvatarTapped(tapGestureRecognizer:)))
@@ -136,11 +137,11 @@ class FlowViewController: UIViewController {
     }
 
     func showMatchOverlay() {
-        matchOverlay.isHidden = false;
+        matchView.isHidden = false;
     }
     
     func hideMatchOverlay() {
-        matchOverlay.isHidden = true;
+        matchView.isHidden = true;
     }
 
     override func viewDidLoad() {
@@ -148,5 +149,4 @@ class FlowViewController: UIViewController {
         initViewData()
         super.viewDidLoad()
     }
-
 }

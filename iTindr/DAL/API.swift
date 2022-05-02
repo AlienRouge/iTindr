@@ -8,6 +8,7 @@ let topicPrefix = "/v1/topic"
 let profilePrefix = "/v1/profile"
 let profileAvatarPrefix = "/v1/profile/avatar"
 let feedPrefix = "/v1/user/feed"
+let userPrefix = "/v1/user"
 
 let headers: HTTPHeaders = [
     "authorization": "Bearer \(UserDefaults.standard.string(forKey: "accessToken") ?? "")",
@@ -59,6 +60,15 @@ struct API {
 
     static func dislikeUser(userId: String) -> DataRequest {
         AF.request(baseUrl + "/v1/user/\(userId)/dislike", method: .post, headers: headers)
+    }
+
+    static func getUsers(params: [String: Int]) -> DataRequest {
+        print(params)
+        return AF.request(baseUrl + userPrefix,
+                method: .get,
+                parameters: params,
+                encoding: URLEncoding.default,
+                headers: headers)
     }
 }
 

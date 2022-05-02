@@ -6,11 +6,11 @@ struct Store {
     static var topics: TopicList = TopicList()
     static var currentUserProfile: ProfileData? = nil
 
-    static func getCurrentUserProfile() -> ProfileData?{
+    static func getCurrentUserProfile() -> ProfileData? {
         currentUserProfile ?? nil
     }
 
-    static func setCurrentUserProfile(profile: ProfileData){
+    static func setCurrentUserProfile(profile: ProfileData) {
         currentUserProfile = profile
     }
 

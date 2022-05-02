@@ -40,6 +40,7 @@ class UserActions {
                     response in
                     switch response.result {
                     case .success(let value):
+                        print(value.accessToken)
                         UserDefaults.standard.set(value.accessToken, forKey: "accessToken")
                         UserDefaults.standard.set(value.refreshToken, forKey: "refreshToken")
                         successCallback()
@@ -207,6 +208,29 @@ class UserActions {
                         errorCallBack()
                     }
 
+                }
+    }
+
+    static func getUsers(limit: Int, offset: Int, successCallback: @escaping ([ProfileData]) -> Void, errorCallBack: @escaping () -> Void){
+        let params: [String: Int] = [
+            "limit": limit,
+            "offset": offset
+        ]
+
+        API.getUsers(params: params)
+                .validate()
+                .responseDecodable(of: [ProfileData].self) {
+                    response in
+                    switch response.result {
+                    case .success(let value):
+                        successCallback(value)
+                        debugPrint(response)
+
+                    case .failure(let error):
+                        print("Fail!")
+                        debugPrint(response)
+                        errorCallBack()
+                    }
                 }
     }
 }
