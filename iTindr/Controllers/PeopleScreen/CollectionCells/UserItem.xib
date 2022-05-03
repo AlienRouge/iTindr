@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="UserItem" id="gTV-IL-0wX" customClass="UserItem" customModule="iTindr" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="88" height="64"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="88" height="64"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="V8b-nz-cRM">
+                        <rect key="frame" x="0.0" y="0.0" width="88" height="64"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="ProfilePlaceholder" translatesAutoresizingMaskIntoConstraints="NO" id="itE-uP-MPV">
+                                <rect key="frame" x="22" y="0.0" width="44" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="itE-uP-MPV" secondAttribute="height" multiplier="1:1" id="1wS-4f-pPQ"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" minimumScaleFactor="0.29999999999999999" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Nwg-gc-Nij">
+                                <rect key="frame" x="17.5" y="44" width="53.5" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="Mbq-A4-7BQ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="itE-uP-MPV" firstAttribute="centerX" secondItem="V8b-nz-cRM" secondAttribute="centerX" id="17l-B3-ou5"/>
+                        </constraints>
+                    </stackView>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="V8b-nz-cRM" secondAttribute="bottom" id="U3L-u6-EPv"/>
+                <constraint firstItem="V8b-nz-cRM" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="iVM-Gs-nhY"/>
+                <constraint firstAttribute="trailing" secondItem="V8b-nz-cRM" secondAttribute="trailing" id="k2s-tF-SjA"/>
+                <constraint firstItem="V8b-nz-cRM" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="lHE-nU-ZdM"/>
+            </constraints>
+            <size key="customSize" width="88" height="64"/>
+            <connections>
+                <outlet property="userImage" destination="itE-uP-MPV" id="UoJ-Yq-wkT"/>
+                <outlet property="userName" destination="Nwg-gc-Nij" id="iyT-L4-c83"/>
+            </connections>
+            <point key="canvasLocation" x="105.79710144927537" y="65.625"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="ProfilePlaceholder" width="600" height="600"/>
+    </resources>
+</document>

@@ -1,20 +1,30 @@
 PODS:
   - Alamofire (5.6.1)
+  - InputBarAccessoryView (5.5.0):
+    - InputBarAccessoryView/Core (= 5.5.0)
+  - InputBarAccessoryView/Core (5.5.0)
+  - MessageKit (3.8.0):
+    - InputBarAccessoryView (~> 5.5.0)
   - TagListView (1.4.1)
 
 DEPENDENCIES:
   - Alamofire
+  - MessageKit
   - TagListView (~> 1.0)
 
 SPEC REPOS:
   trunk:
     - Alamofire
+    - InputBarAccessoryView
+    - MessageKit
     - TagListView
 
 SPEC CHECKSUMS:
   Alamofire: 87bd8c952f9a4454320fce00d9cc3de57bcadaf5
+  InputBarAccessoryView: 1d7b0a672b36e370f01f264b3907ef39d03328e3
+  MessageKit: a1ba0c69ebead94029867853eb44dd05b9b3f453
   TagListView: a1c236d17960a0cf64156725a76ce6d73ebce2be
 
-PODFILE CHECKSUM: a1dbe4dff26cd41324ede61d09ad3ec7dc622991
+PODFILE CHECKSUM: 19cd2e8a1724394c7dd060a7a2e8795c9037726e
 
 COCOAPODS: 1.11.3

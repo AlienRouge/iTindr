@@ -2,10 +2,10 @@ import UIKit
 
 class PeopleViewController: UIViewController {
     @IBOutlet weak var collectionView: UICollectionView!
-    private let reuseIdentifier = "UserCell"
+    private let reuseIdentifier = "UserItem"
     var overlay: UIView? = nil
 
-    var totalPage: Int = 0
+    var lastFetchCount: Int = 0
     var currentPage: Int = 0
     var profiles: [ProfileData] = [ProfileData]()
     let pageSize: Int = 20
@@ -15,11 +15,13 @@ class PeopleViewController: UIViewController {
         UserActions.getUsers(limit: pageSize, offset: page * pageSize,
                 successCallback:
                 { data in
+                    self.lastFetchCount = data.count
                     self.profiles.append(contentsOf: data)
                     self.collectionView.reloadData()
                     self.hideOverlay()
                 }, errorCallBack:
         {
+            self.hideOverlay()
         })
     }
 
@@ -57,7 +59,7 @@ extension PeopleViewController: UICollectionViewDataSource, UICollectionViewDele
     }
 
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as! UserCell
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as! UserItem
         let user = profiles[indexPath.row]
         cell.setupCell(profile: user)
 
@@ -65,7 +67,7 @@ extension PeopleViewController: UICollectionViewDataSource, UICollectionViewDele
     }
 
     public func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
-        if indexPath.row == profiles.count - 1 {
+        if indexPath.row == profiles.count - 1 && lastFetchCount != 0 {
             currentPage = currentPage + 1
             fetchData(page: currentPage)
         }
@@ -74,9 +76,8 @@ extension PeopleViewController: UICollectionViewDataSource, UICollectionViewDele
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let profile = profiles[indexPath.row]
         Store.setCurrentUserProfile(profile: profile)
-        print(Store.getCurrentUserProfile())
 
-        let storyboard = UIStoryboard(name: "LoginStoryboard", bundle: nil)
+        let storyboard = UIStoryboard(name: "MainStoryboard", bundle: nil)
         let nextVC = storyboard.instantiateViewController(identifier: "UserProfile")
 
         show(nextVC, sender: self)

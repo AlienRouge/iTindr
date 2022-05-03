@@ -34,11 +34,19 @@ class UserProfileViewController: UIViewController {
             self.hideOverlay()
         })
     }
+
     @IBAction func sendMessageAction(_ sender: Any) {
-        hideMatchOverlay()
-        tabBarController!.selectedIndex = 2
+        UserActions.createChat(userId: Store.currentUserProfile!.userId,
+                successCallback: { chat in
+                    // To Chat screen
+                    print(chat)
+                    self.hideMatchOverlay()
+                    self.tabBarController?.tabBar.isHidden = false
+                    self.tabBarController!.selectedIndex = 2
+                },
+                errorCallBack: {})
     }
-    
+
     func initViewData() {
         setupViews()
         userName.text = Store.currentUserProfile!.name
@@ -59,8 +67,6 @@ class UserProfileViewController: UIViewController {
         overlay = Overlay.getOverlay(view: view)
         userAvatar.layer.masksToBounds = true
         userAvatar.layer.cornerRadius = userAvatar.bounds.width / 2
-        matchView.frame = view.frame
-        navigationController?.view.addSubview(matchView)
         tabBarController?.tabBar.isHidden = true
         userTagList.textFont = UIFont.systemFont(ofSize: 20)
         navigationController?.navigationBar.tintColor = UIColor(red: 250 / 255.0, green: 19 / 255.0, blue: 171 / 255.0, alpha: 1.0);
@@ -90,11 +96,12 @@ class UserProfileViewController: UIViewController {
     }
 
     func showMatchOverlay() {
-        matchView.isHidden = false;
+        matchView.frame = view.frame
+        navigationController?.view.addSubview(matchView)
     }
 
     func hideMatchOverlay() {
-        matchView.isHidden = true;
+        matchView.removeFromSuperview()
     }
 
     override func viewDidLoad() {

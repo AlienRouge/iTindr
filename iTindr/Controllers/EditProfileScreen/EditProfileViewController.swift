@@ -70,7 +70,7 @@ class EditProfileViewController: UIViewController, UIImagePickerControllerDelega
 
                     Store.loadFlowDataFromServer(successCallback: {
                         print("Flow")
-                        let storyboard = UIStoryboard(name: "LoginStoryboard", bundle: nil)
+                        let storyboard = UIStoryboard(name: "MainStoryboard", bundle: nil)
                         let nextVC = storyboard.instantiateViewController(identifier: "MainTabBarController")
 
                         nextVC.modalPresentationStyle = .fullScreen

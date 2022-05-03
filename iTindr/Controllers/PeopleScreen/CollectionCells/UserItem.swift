@@ -7,7 +7,7 @@
 
 import UIKit
 
-class UserCell: UICollectionViewCell {
+class UserItem: UICollectionViewCell {
     @IBOutlet weak var userImage: UIImageView!
     @IBOutlet weak var userName: UILabel!
     var profileData: ProfileData? = nil
@@ -16,7 +16,7 @@ class UserCell: UICollectionViewCell {
         profileData = profile
         userName.text = profile.name
         userImage.layoutIfNeeded()
-        userImage.layer.cornerRadius = 45
+        userImage.layer.cornerRadius = userImage.bounds.width / 2
 
         if let url = URL(string: profile.avatar ?? "") {
             if let data = try? Data(contentsOf: url) {

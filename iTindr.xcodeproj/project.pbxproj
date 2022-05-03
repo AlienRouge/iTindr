@@ -9,8 +9,8 @@
 /* Begin PBXBuildFile section */
 		460CB97E281FA8A90059FD49 /* MatchView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 460CB97C281FA8A90059FD49 /* MatchView.xib */; };
 		460CB981281FB2320059FD49 /* PeopleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 460CB980281FB2320059FD49 /* PeopleViewController.swift */; };
-		460CB985281FB3190059FD49 /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 460CB983281FB3190059FD49 /* UserCell.swift */; };
-		460CB986281FB3190059FD49 /* UserCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 460CB984281FB3190059FD49 /* UserCell.xib */; };
+		460CB985281FB3190059FD49 /* UserItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 460CB983281FB3190059FD49 /* UserItem.swift */; };
+		460CB986281FB3190059FD49 /* UserItem.xib in Resources */ = {isa = PBXBuildFile; fileRef = 460CB984281FB3190059FD49 /* UserItem.xib */; };
 		461CB64D281EF84600065020 /* AboutUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 461CB64C281EF84600065020 /* AboutUserViewController.swift */; };
 		461CB64F281F061300065020 /* CompositionalLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 461CB64E281F061300065020 /* CompositionalLayout.swift */; };
 		461CB651281F086100065020 /* TestVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 461CB650281F086100065020 /* TestVC.swift */; };
@@ -22,10 +22,15 @@
 		46A47A7D281909CF001C0F09 /* iTindrUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46A47A7C281909CF001C0F09 /* iTindrUITests.swift */; };
 		46A47A7F281909CF001C0F09 /* iTindrUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46A47A7E281909CF001C0F09 /* iTindrUITestsLaunchTests.swift */; };
 		46A47A912819135C001C0F09 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46A47A902819135C001C0F09 /* GradientView.swift */; };
+		46CD4FC9282170F6009A9596 /* ChatListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46CD4FC8282170F6009A9596 /* ChatListViewController.swift */; };
+		46CD4FCD28217179009A9596 /* ChatListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46CD4FCB28217179009A9596 /* ChatListItem.swift */; };
+		46CD4FCE28217179009A9596 /* ChatListItem.xib in Resources */ = {isa = PBXBuildFile; fileRef = 46CD4FCC28217179009A9596 /* ChatListItem.xib */; };
+		46CD4FD128218A0C009A9596 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46CD4FD028218A0C009A9596 /* ChatViewController.swift */; };
 		46DB9540281AE8C700901CAA /* DecodeTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46DB953F281AE8C700901CAA /* DecodeTypes.swift */; };
 		46DB9542281AE8F600901CAA /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46DB9541281AE8F600901CAA /* API.swift */; };
 		46DB9544281AF1E500901CAA /* AuthUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46DB9543281AF1E500901CAA /* AuthUtils.swift */; };
 		46E1F6E6281963D70062EDBB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46A47A5B281909CD001C0F09 /* AppDelegate.swift */; };
+		46E455C32821393000EC6926 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46E455C22821393000EC6926 /* MainStoryboard.storyboard */; };
 		6EECE1B01B6FE8C9C72B47CA /* TopicList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EECED9563F99DC5B4DC800A /* TopicList.swift */; };
 		6EECE3D52A3E9288A33C811C /* EditProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EECE5F38138DAC6C7665BCE /* EditProfileViewController.swift */; };
 		6EECE4E54B5BECFDC56B785B /* UserProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EECE4FCDCB8EC0CF68B1C25 /* UserProfileViewController.swift */; };
@@ -69,8 +74,8 @@
 		2CC8E1DA33BBE70234BDB28A /* Pods_iTindr_iTindrUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iTindr_iTindrUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		460CB97C281FA8A90059FD49 /* MatchView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MatchView.xib; sourceTree = "<group>"; };
 		460CB980281FB2320059FD49 /* PeopleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleViewController.swift; sourceTree = "<group>"; };
-		460CB983281FB3190059FD49 /* UserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
-		460CB984281FB3190059FD49 /* UserCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserCell.xib; sourceTree = "<group>"; };
+		460CB983281FB3190059FD49 /* UserItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserItem.swift; sourceTree = "<group>"; };
+		460CB984281FB3190059FD49 /* UserItem.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserItem.xib; sourceTree = "<group>"; };
 		461CB64C281EF84600065020 /* AboutUserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutUserViewController.swift; sourceTree = "<group>"; };
 		461CB64E281F061300065020 /* CompositionalLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompositionalLayout.swift; sourceTree = "<group>"; };
 		461CB650281F086100065020 /* TestVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestVC.swift; sourceTree = "<group>"; };
@@ -87,9 +92,14 @@
 		46A47A7C281909CF001C0F09 /* iTindrUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iTindrUITests.swift; sourceTree = "<group>"; };
 		46A47A7E281909CF001C0F09 /* iTindrUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iTindrUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		46A47A902819135C001C0F09 /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
+		46CD4FC8282170F6009A9596 /* ChatListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatListViewController.swift; sourceTree = "<group>"; };
+		46CD4FCB28217179009A9596 /* ChatListItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatListItem.swift; sourceTree = "<group>"; };
+		46CD4FCC28217179009A9596 /* ChatListItem.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChatListItem.xib; sourceTree = "<group>"; };
+		46CD4FD028218A0C009A9596 /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
 		46DB953F281AE8C700901CAA /* DecodeTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecodeTypes.swift; sourceTree = "<group>"; };
 		46DB9541281AE8F600901CAA /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		46DB9543281AF1E500901CAA /* AuthUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthUtils.swift; sourceTree = "<group>"; };
+		46E455C22821393000EC6926 /* MainStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainStoryboard.storyboard; sourceTree = "<group>"; };
 		479AA30DC11BA604408925F4 /* Pods-iTindr-iTindrUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iTindr-iTindrUITests.debug.xcconfig"; path = "Target Support Files/Pods-iTindr-iTindrUITests/Pods-iTindr-iTindrUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		6EECE01C1D430450619E567D /* LoginStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LoginStoryboard.storyboard; sourceTree = "<group>"; };
 		6EECE150E4205E0088AC23B8 /* FlowViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlowViewController.swift; sourceTree = "<group>"; };
@@ -151,8 +161,8 @@
 		460CB982281FB2DB0059FD49 /* CollectionCells */ = {
 			isa = PBXGroup;
 			children = (
-				460CB983281FB3190059FD49 /* UserCell.swift */,
-				460CB984281FB3190059FD49 /* UserCell.xib */,
+				460CB983281FB3190059FD49 /* UserItem.swift */,
+				460CB984281FB3190059FD49 /* UserItem.xib */,
 			);
 			path = CollectionCells;
 			sourceTree = "<group>";
@@ -190,6 +200,7 @@
 		46A47A5A281909CD001C0F09 /* iTindr */ = {
 			isa = PBXGroup;
 			children = (
+				46E455C02821389D00EC6926 /* Storyboards */,
 				46E1F6E728197A430062EDBB /* DAL */,
 				46A47A8B281910CC001C0F09 /* Utils */,
 				46A47A5B281909CD001C0F09 /* AppDelegate.swift */,
@@ -235,6 +246,32 @@
 			path = Utils;
 			sourceTree = "<group>";
 		};
+		46CD4FC7282170A8009A9596 /* ChatListScreen */ = {
+			isa = PBXGroup;
+			children = (
+				46CD4FCA2821714B009A9596 /* ChatListItem */,
+				46CD4FC8282170F6009A9596 /* ChatListViewController.swift */,
+			);
+			path = ChatListScreen;
+			sourceTree = "<group>";
+		};
+		46CD4FCA2821714B009A9596 /* ChatListItem */ = {
+			isa = PBXGroup;
+			children = (
+				46CD4FCB28217179009A9596 /* ChatListItem.swift */,
+				46CD4FCC28217179009A9596 /* ChatListItem.xib */,
+			);
+			path = ChatListItem;
+			sourceTree = "<group>";
+		};
+		46CD4FCF2821884F009A9596 /* ChatScreen */ = {
+			isa = PBXGroup;
+			children = (
+				46CD4FD028218A0C009A9596 /* ChatViewController.swift */,
+			);
+			path = ChatScreen;
+			sourceTree = "<group>";
+		};
 		46E1F6E728197A430062EDBB /* DAL */ = {
 			isa = PBXGroup;
 			children = (
@@ -243,6 +280,22 @@
 				6EECE910C9285CE156BF1EE5 /* UserActions.swift */,
 			);
 			path = DAL;
+			sourceTree = "<group>";
+		};
+		46E455C02821389D00EC6926 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				46E455C1282138B800EC6926 /* Main */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		46E455C1282138B800EC6926 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				46E455C22821393000EC6926 /* MainStoryboard.storyboard */,
+			);
+			path = Main;
 			sourceTree = "<group>";
 		};
 		5643E7850AD5FC68C6C7BA46 /* Frameworks */ = {
@@ -331,6 +384,8 @@
 		6EECEC1EEC0310D70EB57DA7 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				46CD4FCF2821884F009A9596 /* ChatScreen */,
+				46CD4FC7282170A8009A9596 /* ChatListScreen */,
 				460CB97F281FB1D60059FD49 /* PeopleScreen */,
 				461CB64B281EF82A00065020 /* AboutUser */,
 				6EECE85A617B0D96A662F3FA /* LoginScreen */,
@@ -452,11 +507,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				46CD4FCE28217179009A9596 /* ChatListItem.xib in Resources */,
 				460CB97E281FA8A90059FD49 /* MatchView.xib in Resources */,
 				46A47A68281909CE001C0F09 /* LaunchScreen.storyboard in Resources */,
 				46A47A65281909CE001C0F09 /* Assets.xcassets in Resources */,
 				6EECEF7BCC9F1680005C2B52 /* LoginStoryboard.storyboard in Resources */,
-				460CB986281FB3190059FD49 /* UserCell.xib in Resources */,
+				460CB986281FB3190059FD49 /* UserItem.xib in Resources */,
+				46E455C32821393000EC6926 /* MainStoryboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -588,12 +645,15 @@
 				46DB9544281AF1E500901CAA /* AuthUtils.swift in Sources */,
 				46DB9540281AE8C700901CAA /* DecodeTypes.swift in Sources */,
 				46A47A912819135C001C0F09 /* GradientView.swift in Sources */,
+				46CD4FC9282170F6009A9596 /* ChatListViewController.swift in Sources */,
 				460CB981281FB2320059FD49 /* PeopleViewController.swift in Sources */,
 				46DB9542281AE8F600901CAA /* API.swift in Sources */,
 				46E1F6E6281963D70062EDBB /* AppDelegate.swift in Sources */,
 				46A47A5E281909CD001C0F09 /* SceneDelegate.swift in Sources */,
-				460CB985281FB3190059FD49 /* UserCell.swift in Sources */,
+				460CB985281FB3190059FD49 /* UserItem.swift in Sources */,
+				46CD4FD128218A0C009A9596 /* ChatViewController.swift in Sources */,
 				6EECE67906F8777C5B533846 /* UserActions.swift in Sources */,
+				46CD4FCD28217179009A9596 /* ChatListItem.swift in Sources */,
 				6EECEAD770444C627B9713E6 /* JSON.swift in Sources */,
 				6EECED66E9DFB063F8195393 /* UserProfile.swift in Sources */,
 				6EECE1B01B6FE8C9C72B47CA /* TopicList.swift in Sources */,

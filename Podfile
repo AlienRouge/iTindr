@@ -18,6 +18,6 @@ target 'iTindr' do
 
 pod “Alamofire”
 pod 'TagListView', '~> 1.0'
-
+pod 'MessageKit'
 
 end

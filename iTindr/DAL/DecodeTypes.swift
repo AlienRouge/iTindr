@@ -48,5 +48,56 @@ struct Like: Decodable {
     }
 }
 
+struct ChatItem: Decodable {
+    let chat: Chat
+    let lastMessage: Message?
+
+    enum CodingKeys: String, CodingKey {
+        case chat
+        case lastMessage
+    }
+}
+
+struct Chat: Decodable {
+    let id: String
+    let title: String
+    let avatar: String?
+
+    enum CodingKeys: String, CodingKey {
+        case id
+        case title
+        case avatar
+    }
+}
+struct Message: Decodable {
+    let id: String
+    let text: String
+    let createdAt: String
+    let user: ChatUser
+    let attachments: [String]
+
+    enum CodingKeys: String, CodingKey {
+        case id
+        case text
+        case createdAt
+        case user
+        case attachments
+    }
+}
+
+struct ChatUser: Decodable {
+    let userId: String
+    let name: String
+    let avatar: String?
+
+    enum CodingKeys: String, CodingKey {
+        case userId
+        case name
+        case avatar
+    }
+}
+
+
+
 
 

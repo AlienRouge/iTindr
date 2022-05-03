@@ -102,7 +102,7 @@ class FlowViewController: UIViewController {
     func setupViews() {
         overlay = Overlay.getOverlay(view: view)
         userAvatar.layer.masksToBounds = true
-        userAvatar.layer.cornerRadius = 800
+        userAvatar.layer.cornerRadius = userAvatar.bounds.width / 2
         matchView.frame = view.frame
         tabBarController?.view.addSubview(matchView!)
         userTagList.textFont = UIFont.systemFont(ofSize: 15)
@@ -115,7 +115,7 @@ class FlowViewController: UIViewController {
     @objc func userAvatarTapped(tapGestureRecognizer: UITapGestureRecognizer)
     {
         Store.setCurrentUserProfile(profile: profile!)
-        let storyboard = UIStoryboard(name: "LoginStoryboard", bundle: nil)
+        let storyboard = UIStoryboard(name: "MainStoryboard", bundle: nil)
         let nextVC = storyboard.instantiateViewController(identifier: "AboutUser")
 
         nextVC.modalPresentationStyle = .fullScreen

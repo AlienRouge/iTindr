@@ -233,6 +233,46 @@ class UserActions {
                     }
                 }
     }
+
+    static func getChats(successCallback: @escaping ([ChatItem]) -> Void, errorCallBack: @escaping () -> Void){
+        API.getChats()
+                .validate()
+                .responseDecodable(of: [ChatItem].self) {
+                    response in
+                    switch response.result {
+                    case .success(let value):
+                        successCallback(value)
+                        debugPrint(response)
+
+                    case .failure(let error):
+                        print("Fail!: \(error)")
+                        debugPrint(response)
+                        errorCallBack()
+                    }
+                }
+    }
+
+    static func createChat(userId: String, successCallback: @escaping (Chat) -> Void, errorCallBack: @escaping () -> Void){
+        let params: [String: String] = [
+            "userId": userId,
+        ]
+
+        API.createChat(params: params)
+                .validate()
+                .responseDecodable(of: Chat.self) {
+                    response in
+                    switch response.result {
+                    case .success(let value):
+                        successCallback(value)
+                        debugPrint(response)
+
+                    case .failure(let error):
+                        print("Fail!: \(error)")
+                        debugPrint(response)
+                        errorCallBack()
+                    }
+                }
+    }
 }
 
 
