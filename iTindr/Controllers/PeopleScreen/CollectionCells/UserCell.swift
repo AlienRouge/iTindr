@@ -16,8 +16,7 @@ class UserCell: UICollectionViewCell {
         profileData = profile
         userName.text = profile.name
         userImage.layoutIfNeeded()
-        userImage.layer.cornerRadius = frame.size.width / 2.8
-        userImage.clipsToBounds = true
+        userImage.layer.cornerRadius = 45
 
         if let url = URL(string: profile.avatar ?? "") {
             if let data = try? Data(contentsOf: url) {

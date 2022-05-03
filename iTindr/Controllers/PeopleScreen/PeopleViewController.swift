@@ -1,10 +1,3 @@
-//
-//  PeopleViewController.swift
-//  iTindr
-//
-//  Created by Vladislav on 02.05.2022.
-//
-
 import UIKit
 
 class PeopleViewController: UIViewController {
@@ -81,6 +74,7 @@ extension PeopleViewController: UICollectionViewDataSource, UICollectionViewDele
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let profile = profiles[indexPath.row]
         Store.setCurrentUserProfile(profile: profile)
+        print(Store.getCurrentUserProfile())
 
         let storyboard = UIStoryboard(name: "LoginStoryboard", bundle: nil)
         let nextVC = storyboard.instantiateViewController(identifier: "UserProfile")

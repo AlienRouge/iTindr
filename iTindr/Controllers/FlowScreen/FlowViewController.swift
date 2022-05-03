@@ -102,7 +102,7 @@ class FlowViewController: UIViewController {
     func setupViews() {
         overlay = Overlay.getOverlay(view: view)
         userAvatar.layer.masksToBounds = true
-        userAvatar.layer.cornerRadius = userAvatar.bounds.width / 2
+        userAvatar.layer.cornerRadius = 800
         matchView.frame = view.frame
         tabBarController?.view.addSubview(matchView!)
         userTagList.textFont = UIFont.systemFont(ofSize: 15)
